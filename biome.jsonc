@@ -1,14 +1,24 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
   "extends": ["ultracite"],
-  "formatter": {
-    "indentStyle": "space",
-    "lineWidth": 80
-  },
   "javascript": {
     "formatter": {
-      "semicolons": "asNeeded",
-      "quoteStyle": "single"
+      "semicolons": "asNeeded"
+    }
+  },
+  "linter": {
+    "rules": {
+      "nursery": {
+        "useSortedClasses": "off",
+        "noUnknownAtRule": "off"
+      }
+    }
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "useSortedAttributes": "off"
+      }
     }
   }
 }
